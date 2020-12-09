@@ -1,6 +1,6 @@
 
 {
-  "data": [
+  "records": [
     {
       "name": "Harry Potter",
       "species": "human",
