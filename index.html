@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<title>Customers</title>
+<link rel="stylesheet" href="./assets/css/w3.css">
+<script src="./assets/js/appml.js"></script>
+<body>
+
+<div class="w3-container" appml-data="./assets/js/characters.js">
+<h1>Customers</h1>
+<h3>Displayed from JSON file</h3>
+  <table class="w3-table-all">
+  <tr>
+    <th>Customer</th>
+    <th>City</th>
+    <th>Country</th>
+  </tr>
+  <tr appml-repeat="data">
+    <td>{{name}}</td>
+    <td>{{house}}</td>
+    <td>{{yearOfBirth}}</td>
+  </tr>
+  </table>
+</div>
+
+</body>
+</html>
