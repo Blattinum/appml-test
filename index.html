@@ -5,17 +5,21 @@
 <script src="./assets/js/appml.js"></script>
 <body>
 
-<div class="w3-container" appml-data="./assets/js/characters.js">
+<div class="w3-container" appml-data="./assets/js/characters1.js">
 <h1>Customers</h1>
 <h3>Displayed from JSON file</h3>
   <table class="w3-table-all">
   <tr>
-    <th>Customer</th>
-    <th>City</th>
-    <th>Country</th>
+    <th>Name</th>
+    <th>Species</th>
+    <th>Gender</th>
+    <th>Wand Wood</th>
   </tr>
-  <tr appml-repeat="data">
+  <tr appml-repeat="records">
     <td>{{name}}</td>
+    <td>{{species}}</td>
+    <td>{{gender}}</td>
+    <td>{{yearOfBirth}}</td>
   </tr>
   </table>
 </div>
