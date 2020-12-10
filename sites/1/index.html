@@ -10,10 +10,11 @@
 
   <script>
     let url = "spectre.casa"
+    let proxyUrl = 'https://cors-anywhere.herokuapp.com/'
 
     window.onload = function() {
 
-    fetch('https://is.gd/create.php?format=simple&url=' + url)
+    fetch(proxyUrl + 'https://is.gd/create.php?format=simple&url=' + url)
       .then(response => response.text())
       .then(data => console.log(data));
 
