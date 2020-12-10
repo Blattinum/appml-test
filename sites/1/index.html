@@ -19,7 +19,7 @@
 
     fetch(proxyUrl + 'https://is.gd/create.php?format=simple&url=' + url)
       .then(response => response.text())
-      .then(data => document.querySelector('#result').innerHTML() = data);
+      .then(data => console.log(data));
 
     };
   </script>
