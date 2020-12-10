@@ -6,17 +6,20 @@
   <title>Document</title>
 </head>
 <body>
+
+    <button onclick="shortURL()">Shorten</button>
+    <p id="result">URL</p>
   
 
   <script>
     let url = "spectre.casa"
     let proxyUrl = 'https://cors-anywhere.herokuapp.com/'
 
-    window.onload = function() {
+    function shortURL() {
 
     fetch(proxyUrl + 'https://is.gd/create.php?format=simple&url=' + url)
       .then(response => response.text())
-      .then(data => console.log(data));
+      .then(data => document.querySelector('#result').innerHTML() = data);
 
     };
   </script>
