@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Compassion Demonstrated';
+    src: url('../fonts/CompassionDemonstrated-Regular.eot');
+    src: url('../fonts/CompassionDemonstrated-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CompassionDemonstrated-Regular.woff2') format('woff2'),
+        url('../fonts/CompassionDemonstrated-Regular.woff') format('woff'),
+        url('../fonts/CompassionDemonstrated-Regular.ttf') format('truetype'),
+        url('../fonts/CompassionDemonstrated-Regular.svg#CompassionDemonstrated-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --content-size: 3.2rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Compassion Demonstrated', Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #5F6E9C;
+    letter-spacing: 0.05rem;
+    line-height: 5.0rem;
+    text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        /*background-color: #313952;*/
+        background: rgb(49,57,82);
+        background: linear-gradient(127deg, rgba(49,57,82,1) 0%, rgba(60,70,102,1) 100%);
+        color: #fffefa;
+    }
+    button:hover {
+    background-color: #5F6E9C;
+    color: #fff;
+    opacity: 1;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        /*background-color: #5F6E9C;*/
+        background: rgb(95,110,156);
+        background: linear-gradient(127deg, rgba(95,110,156,1) 0%, rgba(70,82,117,1) 100%);
+        color: #fff;
+    }
+    button:hover {
+    background-color: #313952;
+    color: #fff;
+    opacity: 1;
+    }
+}
+
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    width: auto;
+}
+
+.flex-item {
+    font-weight: bold;
+    font-size: var(--content-size);
+    text-align: center;
+}
+
+.flex-item button {
+    font-size: var(--content-size);
+}
+
+.flex-item input {
+    font-size: var(--content-size);
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    border-radius: 15%;
+    color: #000;
+    padding: 3px 15px 3px 15px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+.display-none {
+    display: none;
+}
+
+.help {
+    font-size: calc(var(--content-size) * 0.6);
+    margin-top: 1rem;
+}
+
+.help > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.help > a:hover {
+    color: lightgrey;
+    text-decoration: underline;
+}
+
+.help > a:active {
+    color: #fff;
+}
