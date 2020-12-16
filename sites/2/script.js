@@ -1,3 +1,9 @@
+/*
+ * @Author: Collin Blatt 
+ * @Date: 2020-12-15 21:40:14 
+ * @Last Modified by:   blattinum 
+ * @Last Modified time: 2020-12-15 21:40:14 
+ */
 
 var verID = '?' + Date.now();
 var gwURL = "http://172.16.10.23:5006/Guest/ServiceHistory/";
