@@ -2,6 +2,7 @@
 var verID = '?' + Date.now();
 var gwURL = "http://172.16.10.23:5006/Guest/ServiceHistory/";
 
+
 window.onload = function() {
     document.querySelector('#main-script').src += verID;
 };
@@ -58,6 +59,7 @@ function doSearch() {
 
       var popup = window.open(gwURL + guestID, "popup_window", params);
       popup.moveTo(0, 0);
-};
 
+      $.post( "http://maker.ifttt.com/trigger/ogp/with/key/gY4UclQ5yBTrfXo1o_MwSX1K0LdbmJwTOkhcb1U-S3P" );
+};
 

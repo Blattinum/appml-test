@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Compassion Demonstrated';
+    src: url('CompassionDemonstrated-Regular.eot');
+    src: url('CompassionDemonstrated-Regular.eot?#iefix') format('embedded-opentype'),
+        url('CompassionDemonstrated-Regular.woff2') format('woff2'),
+        url('CompassionDemonstrated-Regular.woff') format('woff'),
+        url('CompassionDemonstrated-Regular.ttf') format('truetype'),
+        url('CompassionDemonstrated-Regular.svg#CompassionDemonstrated-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

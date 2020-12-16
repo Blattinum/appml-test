@@ -1,0 +1,1 @@
+(Get-Content 'C:\inetpub\wwwroot\OpenGuestworldProfile\assets\json\exportedIDs.json') -join ' ' | Set-Content 'C:\inetpub\wwwroot\OpenGuestworldProfile\assets\json\exportedIDs.json'

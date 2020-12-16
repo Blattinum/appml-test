@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Guestworld Profile</title>
+
+    <style>
+        @font-face {
+            font-family: 'Compassion Demonstrated';
+            src: url('./assets/fonts/CompassionDemonstrated-Regular.eot');
+            src: url('./assets/fonts/CompassionDemonstrated-Regular.eot?#iefix') format('embedded-opentype'),
+                url('./assets/fonts/CompassionDemonstrated-Regular.woff2') format('woff2'),
+                url('./assets/fonts/CompassionDemonstrated-Regular.woff') format('woff'),
+                url('./assets/fonts/CompassionDemonstrated-Regular.ttf') format('truetype'),
+                url('./assets/fonts/CompassionDemonstrated-Regular.svg#CompassionDemonstrated-Regular') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        :root {
+            --content-size: 3.2rem;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Compassion Demonstrated', Arial, Helvetica, sans-serif;
+            color: #fff;
+            background-color: #5F6E9C;
+            letter-spacing: 0.05rem;
+            line-height: 5.0rem;
+            text-shadow: -1px 1px 0 #000,
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #313952;
+                color: #fffefa;
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #5F6E9C;
+                color: #fff;
+            }
+        }
+
+        .flex-container {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row {
+            width: auto;
+        }
+
+        .flex-item {
+            font-weight: bold;
+            font-size: var(--content-size);
+            text-align: center;
+        }
+
+        .flex-item button {
+            font-size: var(--content-size);
+        }
+
+        .flex-item input {
+            font-size: var(--content-size);
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="row">
+            <div class="flex-item">
+
+                <form>
+                    <label for="search">Open Guestworld Profile:</label>
+                    <input type="number" id="inputSearch" min="1" autofocus />
+                    <button type="submit" onclick="doSearch()">&raquo;</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
