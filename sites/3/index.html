@@ -1,0 +1,61 @@
+<!--
+/*
+ * @Author: Collin Blatt 
+ * @Date: 2020-12-17 16:33:56 
+ * @Last Modified by: collinblatt
+ * @Last Modified time: 2020-12-18 14:30:32
+ */
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireless Bridges</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+
+<link rel="stylesheet" href="./assets/css/main.css">
+
+</head>
+<body>
+    <!-- NO SCRIPT STARTS HERE -->
+<noscript>
+        <style>
+            body {
+                background-color: #2b2b2b;
+            }
+
+            .page-content {
+                display: none;
+            }
+        </style>
+        <dialog open>JavaScript is off. Please enable to view full site.</dialog>
+    </noscript>
+    <!-- NO SCRIPT ENDS HERE -->
+
+
+<div class="page-content">
+    <h1>Which bridge?</h1>
+    <div class="container">
+
+        <button class="btn" title="172.16.0.58" onclick="openMTM()">MTM-Bridge</button>
+        <button class="btn-pe" title="172.16.0.59" onclick="openPE()">PE-Bridge</button>
+
+    </div>
+</div>
+
+    <script>
+        function openMTM() {
+            window.open("http://172.16.0.58/","_self");
+        }
+
+        function openPE() {
+            window.open("http://172.16.0.59/","_self");
+        }
+    </script>
+</body>
+</html>
