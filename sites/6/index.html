@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ServiceHistory</title>
+<link rel="stylesheet" href="./assets/css/w3.css">
+
+<script src="./assets/js/appml.js"></script>
+<body>
+
+<div class="w3-container" appml-data="./assets/js/ID/675.js">
+<h1>Test Test <time datetime="2017-06-27 00:00">(06/27/2017))</time></h1>
+<h5><span class="guest-id">Guest ID: 675</span></h5>
+  <table class="w3-table-all">
+  <tr>
+    <th>Service Type</th>
+    <th>Details</th>
+    <th>Provided By</th>
+    <th>Service Time</th>
+  </tr>
+  <tr appml-repeat="records">
+    <td>{{ServiceType}}</td>
+    <td>{{Details}}</td>
+    <td>{{ProvidedBy}}</td>
+    <td>{{ServiceTime}}</td>
+  </tr>
+  </table>
+</div>
+
+</body>
+</html>
