@@ -1,7 +1,7 @@
 /*
  * @Date: 2021-01-05 12:55:34 
  * @Last Modified by: collinblatt
- * @Last Modified time: 2021-01-05 12:55:54
+ * @Last Modified time: 2021-01-05 16:36:27
  */
 /*
  * Automatic version:
@@ -114,7 +114,7 @@ html {
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
   line-height: 1.4;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 20px auto;
   padding: 0 10px;
   word-wrap: break-word;
