@@ -121,33 +121,32 @@ button {
 }
 
 .help {
-    font-size: calc(var(--content-size) * 0.5);
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(66, 76, 107);
+    font-size: calc(var(--content-size) * 0.6);
     margin-top: 1rem;
 }
 
-.help > a {
+.help a {
     color: #fff;
     text-decoration: none;
 }
 
-.help > a:hover {
+.help a:hover {
     color: lightgrey;
     text-decoration: underline;
 }
 
-.help > a:active {
+.help a:active {
     color: #fff;
 }
-
-.help details {
+.help summary:hover {
     cursor: pointer;
+    color: lightgrey;
+    text-decoration: underline;
 }
 
 .localip-list {
     font-size: calc(var(--content-size) * 0.3);
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
 }
