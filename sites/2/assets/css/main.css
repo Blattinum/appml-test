@@ -124,8 +124,11 @@ button {
     padding: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(66, 76, 107);
+    border-radius: 0.5rem;
     font-size: calc(var(--content-size) * 0.6);
     margin-top: 1rem;
+    width: 49.25rem;
+    position: absolute;
 }
 
 .help a {
@@ -134,7 +137,7 @@ button {
 }
 
 .help a:hover {
-    color: lightgrey;
+    color: rgb(224, 224, 224);
     text-decoration: underline;
 }
 
@@ -143,8 +146,11 @@ button {
 }
 .help summary:hover {
     cursor: pointer;
-    color: lightgrey;
+    color: #fff;
+    background-color: rgb(74, 85, 119);
+    border-radius: 0.5rem;
     text-decoration: underline;
+    transition: 0.25s;
 }
 
 .localip-list {
