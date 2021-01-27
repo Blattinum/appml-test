@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,9 @@
     <title>midrive</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-<link rel="manifest" href="./manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
 
     <style>
         html {
@@ -31,12 +32,15 @@
         }
 
         img {
-            width: 50%;
+            padding: 0;
+            margin: 0;
+            width: 100%;
             border-radius: 2rem;
         }
 
-        .blend-lighten {
+        .blend {
             mix-blend-mode: lighten;
+            /* lighten */
         }
 
         hr {
@@ -45,35 +49,59 @@
             width: 45%;
         }
 
+        .image {
+            margin: 0;
+            padding: 0;
+            background-color: #2b2b2b;
+            width: 50%;
+            border-radius: 2rem;
+        }
+
         @media (prefers-color-scheme: dark) {
             body {
-            background-color: #2b2b2b;
-            color: #fff;
+                background-color: #2b2b2b;
+                color: #fff;
             }
+
             hr {
                 border-color: #3f3f3f;
             }
         }
 
         @media only screen and (max-width: 768px) {
-             img {
+            .image {
                 width: 100%;
                 border-radius: 0rem;
             }
-}
+
+            img {
+                border-radius: 0rem;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <h1>MiDrive</h1>
     <hr>
 
     <h2>I-196 @ Chicago Dr.</h2>
-    <img src="https://micamerasimages.net/thumbs/grand_cam_008.flv.jpg" alt="I-196 AT M-121 (CHICAGO DR)" class="mi-img blend-lighten">
+    <div class="image"><img src="https://micamerasimages.net/thumbs/grand_cam_008.flv.jpg"
+            alt="I-196 AT M-121 (CHICAGO DR)" class="mi-img blend"></div>
+
     <h2>I-196 @ 44th</h2>
-    <img src="https://micamerasimages.net/thumbs/grand_cam_001.flv.jpg" alt="I-196 AT 44TH ST" class="mi-img blend-lighten">
+    <div class="image"><img src="https://micamerasimages.net/thumbs/grand_cam_001.flv.jpg" alt="I-196 AT 44TH ST"
+            class="mi-img blend"></div>
+
     <h2>I-196 @ Kent Trails</h2>
-    <img src="https://micamerasimages.net/thumbs/grand_cam_022.flv.jpg" alt="I-196 AT KENT TRAILS" class="mi-img blend-lighten">
+    <div class="image"><img src="https://micamerasimages.net/thumbs/grand_cam_022.flv.jpg" alt="I-196 AT KENT TRAILS"
+            class="mi-img blend"></div>
+
+    <h2>I-69 @ CAPAC</h2>
+    <div class="image">
+        <img src="https://micamerasimages.net/thumbs/semtoc_cam_341.flv.jpg" alt="I-69 CAPAC" class="mi-img">
+    </div>
 
     <hr>
 
@@ -84,4 +112,5 @@
     </script>
 
 </body>
+
 </html>
