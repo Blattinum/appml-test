@@ -61,6 +61,11 @@
             cursor: url(https://dev.cb3.xyz/cdn/assets/cur/sus-blue.cur), auto;
         }
 
+        .time {
+            font-size: 1.2rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
         @media (prefers-color-scheme: dark) {
             body {
                 background-color: #2b2b2b;
@@ -88,8 +93,9 @@
 <body>
 
     <h1>MiDrive</h1>
+    <i class="time"></i>
     <hr>
-    <small class="time">yup</small>
+
     <h2>I-196 @ Chicago Dr.</h2>
     <div class="image"><img src="https://micamerasimages.net/thumbs/grand_cam_008.flv.jpg"
             alt="I-196 AT M-121 (CHICAGO DR)" class="mi-img blend"></div>
@@ -119,7 +125,7 @@
         var m = d.getMinutes(); // =>  30
         var s = d.getSeconds(); // => 51
 
-        document.querySelector(".time").innerHTML = h + ':' + m + ':' + s;
+        document.querySelector(".time").innerHTML = 'Last updated at' + ' ' + h + ':' + m + ':' + s;
 
         console.log(h + ':' + m + ':' + s);
 
