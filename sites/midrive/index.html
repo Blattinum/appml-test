@@ -89,7 +89,7 @@
 
     <h1>MiDrive</h1>
     <hr>
-
+    <small class="time"></small>
     <h2>I-196 @ Chicago Dr.</h2>
     <div class="image"><img src="https://micamerasimages.net/thumbs/grand_cam_008.flv.jpg"
             alt="I-196 AT M-121 (CHICAGO DR)" class="mi-img blend"></div>
@@ -113,6 +113,14 @@
         var verID = '?' + Date.now();
 
         document.querySelectorAll(".mi-img").src += verID;
+
+        var d = new Date(); // for now
+        var h = d.getHours(); // => 9
+        var m = d.getMinutes(); // =>  30
+        var s = d.getSeconds(); // => 51
+
+        document.querySelectorAll(".time").innerHTML = h + ':' + m + ':' + s;
+
     </script>
 
 </body>
