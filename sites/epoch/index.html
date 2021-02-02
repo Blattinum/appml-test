@@ -24,6 +24,11 @@ let utcSecondsSinceJan12020 = utcSecondsSinceEpoch - coronaEpochTime;
 document.querySelector('#utc-since-epoch').insertAdjacentHTML('beforeend', '<mark>' + utcSecondsSinceEpoch + '</mark>');
 document.querySelector('#utc-since-jan12020').insertAdjacentHTML('beforeend', '<mark>' + utcSecondsSinceJan12020 + '</mark>');
 
+var d = new Date(); // for now
+var h = d.getHours(); // => 9
+var m = d.getMinutes(); // =>  30
+var s = d.getSeconds(); // => 51
+
 document.querySelector(".time").innerHTML = 'Last updated at' + ' ' + h + ':' + m + ':' + s;
     </script>
 </body>
