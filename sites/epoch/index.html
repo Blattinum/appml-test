@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>epoch</title>
+</head>
+<body>
+    
+    <h1 id="utc-since-epoch">Current time (UTC) since Unix Epoch: </h1>
+    <h1 id="utc-since-jan12020">Current time (UTC) since Corona Epoch: </h1>
+
+
+    <script>
+let now = new Date();
+let utcMilllisecondsSinceEpoch = now.getTime() + (now.getTimezoneOffset() * 60 * 1000);
+let utcSecondsSinceEpoch = Math.round(utcMilllisecondsSinceEpoch / 1000);
+
+let coronaEpochTime = 1577836800;
+
+let utcSecondsSinceJan12020 = utcSecondsSinceEpoch - coronaEpochTime;
+
+document.querySelector('#utc-since-epoch').insertAdjacentHTML('beforeend', '<mark>' + utcSecondsSinceEpoch + '</mark>');
+document.querySelector('#utc-since-jan12020').insertAdjacentHTML('beforeend', '<mark>' + utcSecondsSinceJan12020 + '</mark>');
+
+    </script>
+</body>
+</html>
