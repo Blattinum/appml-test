@@ -6,7 +6,8 @@
     <title>epoch</title>
 </head>
 <body>
-    
+    <i class="time"></i>
+
     <h1 id="utc-since-epoch">Current time (UTC) since Unix Epoch: </h1>
     <h1 id="utc-since-jan12020">Current time (UTC) since Corona Epoch: </h1>
 
@@ -23,6 +24,7 @@ let utcSecondsSinceJan12020 = utcSecondsSinceEpoch - coronaEpochTime;
 document.querySelector('#utc-since-epoch').insertAdjacentHTML('beforeend', '<mark>' + utcSecondsSinceEpoch + '</mark>');
 document.querySelector('#utc-since-jan12020').insertAdjacentHTML('beforeend', '<mark>' + utcSecondsSinceJan12020 + '</mark>');
 
+document.querySelector(".time").innerHTML = 'Last updated at' + ' ' + h + ':' + m + ':' + s;
     </script>
 </body>
 </html>
