@@ -1,0 +1,421 @@
+This file contains additional information about Word 5.0.
+For information about configuring Word 5.0 for your
+system, see the "Getting Started" booklet that came with
+the Word 5.5 package.
+
+Note: The files on the disks in the Word 5.5 retail
+package are compressed. For information about copying and
+decompressing files, see the "Getting Started" booklet.
+
+If you have installed Word 5.5, you should review
+README.DOC.
+
+--------Contents----------------------------------------
+. Other Sources of Information
+. General Information
+. Novell Setup Information
+. Installing Word To Run Under Windows 3.0
+. Using Word Under Windows 3.0 with a Hercules Adapter
+. Installing Word To Run Under Windows 2.1
+. Speller Tips
+. Graphics and Layout Features
+. Hanging Indents and Borders
+. Macros
+. Specifying Where New Page Formats Begin
+. Miscellaneous Features
+. Expanding Ruler
+. TSRs and 3270 Emulators
+. Expanded Memory and Memory Management
+. Running Word in a Window Under Presentation Manager
+. Word and Microsoft Bookshelf
+. IBM PS/2 Model P70 (Portable) Graphics Adapter
+. Additional Video Support
+. New Mouse Driver
+. Word 5.5  Utility Files and Word 5.0
+. Mouse Support and OS/2
+
+---------------------------------------------------------
+
+OTHER SOURCES OF INFORMATION
+
+For information on:     See:
+
+Printers and printing   PRINTERS.DOC on the 
+                         Utilities/Printer disk
+Word-DCA conversions    WORD_DCA.DOC on the Program disk
+Word-RTF conversions    WORD_RTF.DOC on the 
+                         Utilities/Printers disk
+
+GENERAL INFORMATION
+
+Library Run makes about 50K more memory available to the
+program being run if you include the filename extension
+when you type the program name after choosing Library Run
+(for example, after choosing Library Run, type
+COMMAND.COM, including the extension). The total memory
+available to the application depends on your particular
+system configuration.
+
+The Quit command in a nested macro now returns control to
+the "parent" macro.
+
+
+NOVELL SETUP INFORMATION
+
+Setup will not recognize a directory name longer than 8
+characters that has been created with the Novell FILER
+utility. If you want to install Word in such a directory,
+you can use the following procedure:
+
+1. Run Setup to install Word on the network file
+   server, Setup User to install Word on a network
+   workstation, in a directory with a name of 8
+   characters or less (not including a 3-character
+   filename extension).
+2. After Setup has installed Word, use the DOS COPY
+   command to copy all of the Word program files
+   to the directory you created with the FILER utility.
+3. Delete all of the Word program files from the
+   original directory specified in step 1. Note
+   that Setup makes some of the Word program files
+   read-only. You should use the RDWRITE utility to
+   make these files read-write before you try to
+   delete them.
+4. If you ran Setup User, delete the MW.INI file
+   from the user directory on the workstation.
+5. If you ran Setup User, edit the SET MSWNET55
+   statement in the workstation AUTOEXEC.BAT file
+   so that it points to the correct user directory
+   on the workstation.
+6. When you start Word, use the /n switch.
+
+
+INSTALLING WORD TO RUN UNDER WINDOWS 3.0
+
+Setup automatically copies the file WORD.PIF to your Word
+program directory. You should use this file to run Word
+under Windows 3.0.
+
+
+To install Word and Learning Word under Windows 3.0:
+
+1. Run the Word Setup program to install
+   Word 5.0 on your system.
+2. Start Windows 3.0.
+3. Open the Program Manager.
+4. Open the Program Group from which you want
+   to start Word 5.0.
+5. Choose File New and select Program Item.
+6. In the Description box, type
+   "Microsoft Word 5.0"
+7. In the Command Line box, type
+   "c:\word\word.pif", where "c:\word"
+   is the name of your Word program directory.
+8. Choose OK
+
+Follow the same procedure to create a Program Item for
+Learning Word. (To order the Learning Word program for
+Word 5.0, send in the coupon that came in your Word
+package.) In step 7, however, type "c:\word\learn.pif",
+where "c:\word" is the name of your Word program
+directory.
+
+Note that you can run Windows 3.0 in three modes--
+standard mode, real mode, or enhanced (protect) mode.
+You can use the Windows Clipboard with Word only if you
+are running in enhanced mode. For more information, see
+your Windows 3.0 documentation.
+
+
+USING WORD UNDER WINDOWS 3.0 WITH A HERCULES ADAPTER
+
+When you press CTRL+ESC or ALT+TAB to leave Word under
+Windows 3.0, you may see some unexpected characters on
+your monitor.
+
+To restore the screen, press CTRL+SHIFT+\.
+
+If you are running Word in a graphics mode with a
+Hercules compatible adapter, you cannot leave Word under
+Windows by pressing CTRL+ESCAPE or ALT+TAB. You must
+choose File Exit to quit Word.
+
+
+INSTALLING WORD TO RUN UNDER WINDOWS 2.1
+
+If you run Word under Windows 2.1, you should delete
+WORD.PIF from your Word program directory after you
+install Word. Copy the file WORD.PI2 from the Program
+disk 1 to your Word program directory. Rename this file
+WORD.PIF and use it to start Word under Windows 2.1.
+
+To start the Learning Word program under Windows 2.1,
+delete the file LEARN.PIF from your Word program
+directory after you install Word. Copy the file LEARN.PI2
+from the Learning Word disk 1 to your Word program
+directory. Rename this file LEARN.PIF and use it to start
+the Learning Word program under Windows 2.1.
+
+
+SPELLER TIPS
+
+You can significantly improve the performance of the
+spelling checker by choosing Spell Options and selecting
+Manual in the "alternatives" field and No in the "check
+punctuation" field.
+
+GRAPHICS AND LAYOUT FEATURES
+
+When importing a graphic into footnote text, always
+insert an empty paragraph by pressing ENTER before
+choosing Library Link Graphics.
+
+It is not possible to import graphics directly from the
+Presentation Manager Clipboard.
+
+For a list of graphics packages and scanners you can use
+with Word 5.0, see Chapter 20, "Layout Features for
+Graphics and Text" in the Word 5.5 version of "Using
+Microsoft Word."
+
+HANGING INDENTS AND BORDERS
+
+Paragraph borders are printed at the paragraph indent
+position. The text for a bordered paragraph is printed
+inside the border instead of at the indent. For a single,
+double, or bold border, text prints 0.1" from the indent;
+for a thick border it prints 0.2" from the indent.
+
+For bulleted lists within borders, it's best to apply the
+border, and then press ALT+T to format bulleted
+paragraphs. Word automatically calculates the first line
+and left paragraph indents so that they work with the tab
+position you jump to after typing a bullet or dash.
+
+If you don't apply the border first, the tab and indents
+for bulleted paragraphs are misaligned, with the tab
+positioned as set and the indents offset to accommodate
+the border. To correct these paragraphs or those that
+have been loaded from a Word 4.0 document, remove the
+hanging indent format, and then press ALT+T to re-apply
+it.
+
+
+MACROS
+
+For a description of supplied macros added since the
+publication of Word 5.0 documentation, see the entry
+1-README-FIRST in MACRO.GLY, and Chapter 24, "Macros," in
+the Word 5.5 version of "Using Microsoft Word."
+
+
+SPECIFYING WHERE NEW PAGE FORMATS BEGIN
+
+When a division includes footnotes or annotations, the
+next division always starts on a new page, even when you
+have selected Continuous in the "division break" field of
+the Format Division Layout command. Normally, this option
+starts the second division on the same page as the end of
+the first division.
+
+
+MISCELLANEOUS FEATURES
+
+"Use as default" field in Format Divisions Margins: Word
+4.0 documents saved with default margin and page size
+values (as set for the U.S. version of Word) assume the
+default margin and page size values you have selected in
+Word 5.0.
+
+EXPANDING RULER
+
+On your screen, Word displays text as if it is formatted
+in a 12-point (10-pitch) fixed-pitch font. If you format
+text in a different point size, or if you use
+proportional fonts, the ruler normally will not correctly
+represent the number of characters that will print per
+inch.
+
+If you use different point sizes or proportional fonts
+and you need to see how many characters will print per
+inch, you can "expand" the ruler by selecting Yes in
+either the "show line breaks" or "show layout" field of
+the Options command.
+
+When one of these options is set to Yes, Word expands the
+ruler when it finds a fixed-pitch font smaller than 12
+points or if it detects a proportional font that prints
+at more than 10 characters per inch. Because Word looks
+at more text than is displayed on screen, the ruler may
+expand even if the text formatted in a small or
+proportional font is not currently visible.
+
+Once the ruler has expanded, it does not contract until
+you turn off the show layout and show line breaks
+options.
+
+To turn off the show layout and show line breaks options:
+
+- Choose Options, and in the "show layout" and
+  "show line breaks" fields, select No.
+
+You also can press ALT+F4 to toggle show layout mode on
+and off and press ALT+F7 to toggle show line breaks on
+and off.
+
+
+TSRs AND 3270 EMULATORS
+
+If you run Word with a TSR (a terminate and stay resident
+program), including the 3270 emulation control programs
+used with 3270 emulation boards like the IBM 3270 board,
+IRMA, IRMA2, Attachmate 3270 board, Forte board, or
+others, and if you notice undesirable keyboard behavior,
+try using the "BIOS-safe" keyboard driver. This should
+make the combination of Word and TSRs safer to use. The
+side effect is that some key combinations used by Word
+may not work directly. These keys can still be accessed
+via keyboard macros available in the glossary file
+SAFEKEYB.GLY. The affected keys are:
+-  ALT+CTRL+ENTER to insert a column break. Press
+   CTRL+C+B instead.
+-  CTRL+Plus Sign to expand outlining levels up to a
+   certain level. Press CTRL+E+O instead.
+-  CTRL+5, or CTRL+5 on the numeric keypad, as a prefix
+   before pressing the Left or Right Arrow key to jump
+   among objects or columns in show layout. Press
+   CTRL+J+C instead, followed by the Left or Right
+   Arrow key.
+-  CTRL+DOWN or CTRL+UP to jump to the next or previous
+   paragraph. Press CTRL+N+P or CTRL+P+P instead.
+-  CTRL+Period or CTRL+Comma to jump to the next or
+   previous field delimited by a closing chevron. Press
+   CTRL+N+F or CTRL+P+F instead.
+
+Note that you can re-assign these macros to another
+control code or function key combination. For more
+information, see Chapter 24, "Macros," in the Word 5.0
+version of "Using Microsoft Word."
+
+To install the "safe" keyboard driver:
+
+Rename the file SCREEN.VID in your program directory to
+something else, run Setup, and choose the "Modify an
+existing version of Word" option. When asked to choose
+your machine from the list, select the item "Safe
+keyboard support for TSRs, 3270 emulators." Continue
+through Setup as usual. You don't need to re-install
+printers or the spelling checker.
+
+
+RUNNING WORD IN A WINDOW UNDER PRESENTATION MANAGER
+
+When running Word in a window under Presentation Manager,
+some key combinations may not work directly. These are
+described above in the section "TSRs and 3270 Emulators."
+To work around this limitation, you can use the glossary
+file SAFEKEYB.GLY, which remaps the key combinations to
+keyboard macros. This limitation doesn't exist if you run
+Word as a full-screen application.
+
+
+WORD AND MICROSOFT BOOKSHELF
+
+To use Word 5.0 with Microsoft Bookshelf, you must order
+the "Bookshelf Word Processor Update Disk" from Microsoft
+Customer Service. In the United States, call 1-800-946-
+9400.
+
+You must run Word 5.0 in text mode to access Bookshelf.
+
+You cannot paste directly from Bookshelf into Word 5.0.
+Instead, save the Bookshelf Clipboard to a file, and then
+use the Transfer Merge command to bring its contents into
+Word. With the next version of Bookshelf it will be
+possible to paste directly into Word 5.0.
+
+You cannot make replacements directly from the Bookshelf
+spelling checker or thesaurus.
+
+
+IBM PS/2 MODEL P70 (PORTABLE) GRAPHICS ADAPTER
+
+If you run Word on an IBM PS/2 Model 70 with the internal
+display, you should delete the file SCREEN.VID from your
+Word program directory after you install Word. You can
+run Word without the video driver, but only 25-line text
+mode is available. The print preview feature is not
+available. To prevent the window border from blinking,
+you should choose the Options command, move to the
+"colors" field, type "A", and then press ENTER.
+
+If you are running Word on an IBM PS/2 Model P70 Portable
+with IBM (not Microsoft) OS/2 1.1, you need to follow
+these steps to create a video driver:
+
+1. Change the name of SCREEN.VID on your Word program
+   disk or directory to something else.
+
+2. Copy and decompress the following files from
+   their respective disks onto the same disk
+   or directory:
+
+ - VIOP70.CSD, VGA.CSD, and VGA.GSD from the Setup disk
+ - MAKEVID.EXE from Program disk 3
+
+3. Type the following on one line (note capitalization):
+
+MAKEVID SCREEN.VID -Lfr VGA.CSD -Lfp VIOP70.CSD -Lfs
+VGA.GSD
+
+4. Move SCREEN.VID to the Word Program disk or directory.
+
+
+ADDITIONAL VIDEO SUPPORT
+
+New video support may be available from monitor
+manufacturers. Contact your monitor manufacturer for more
+information.
+
+
+NEW MOUSE DRIVER
+
+To ensure that your display works correctly with Word and
+the mouse, install the new mouse driver provided with
+Word. You can do this easily when running Setup. Using an
+older mouse driver with Word 5.0 may cause display
+problems.
+
+
+WORD 5.5 UTILITY FILES AND WORD 5.0
+
+All of the sample style sheets have been updated to Word
+5.5 format. You can use these style sheets with Word 5.0.
+Note that the "Standard" variants in Word 5.0 have become
+"Normal" style I.D.'s in Word 5.5. This change does not
+affect functionality.
+
+
+MOUSE SUPPORT AND OS/2
+
+There are some limitations for mouse use under OS/2. The
+mouse is not available in:
+
+OS/2 1.21 in a window.
+
+OS/2 1.0, 1.1, or 1.21 protect mode when Word is in
+graphics mode. In addition, the Mouse lessons of Learning
+Word are not available.
+
+OS/2 1.0, 1.1, or 1.21 compatibility box with Word in
+graphics mode using VGA or the 8514. The mouse is
+available for CGA and EGA modes. You can run both the
+Mouse and Keyboard lessons of Learning Word.
+
+OS/2 1.0 compatibility box with Word in 50-line text mode
+using VGA or the 8514. Mouse support is available in
+other text modes.
+
+OS/2 1.0, 1.1, or 1.21 protect mode with Word in 43-line
+text mode on an EGA card and monochrome monitor. Mouse
+support is available in other text modes.

@@ -1,0 +1,535 @@
+------------------------------------------------------------
+TABLE OF CONTENTS
+
+Additional Printer Support in this Package
+Supplemental Printer Disks
+General Information
+Additional Support for the Hewlett-Packard LaserJet Series
+Listings for Other New Printers
+Corrections to "Printer Information for Microsoft Word."
+------------------------------------------------------------
+
+ADDITIONAL PRINTER SUPPORT IN THIS PACKAGE
+
+In addition to the printers listed in Chapter 2,
+"Supported Printers," in "Printer Information for
+Microsoft Word," support for the following printers is
+included in this package:
+
+Citizen GSX-140/145
+Epson ActionPrinter 5000/5500
+Epson LQ-570/870/1070/1170
+Epson LQ-860
+Epson LQ-2500
+Fujitsu 7100 PS
+HP LaserJet IIIP
+HP LaserJet IIISi
+IBM Execjet 4072
+Kodak Diconix 150 Plus
+Kyocera Q-8010
+NEC P6200/P6300
+NEC Colormate PS
+NEC Silentwriter2 90 and 290
+QMS PS-410
+Star Micronics NX-1001
+Texas Instruments 875/877
+Texas Instruments 885
+
+Detailed information about these printers appears at the
+end of this file.
+
+SUPPLEMENTAL PRINTER DISKS
+
+Support for additional printers is available on the
+Supplemental Printer Disks. For a list of these printers,
+see pages 23-24 in "Printer Information for Microsoft
+Word."
+
+In addition to the printers listed there, the
+Supplemental Printer Disks contain support for the
+following printers (some of these printers are also
+supported on the disks that ship with Word 5.5):
+
+Brother HL-4, M-1309, and M-1324
+Citizen GSX-140/145
+Epson ActionPrinter 5000/5500
+Epson EPI-4000
+Epson LQ-570/870/1070/1170
+Epson LQ-860
+Fujitsu 7100 PS
+Hewlett Packard LaserJet IIISi and IIIP
+Hewlett Packard Pretty Faces font cartridge
+IBM Execjet 4072
+Kodak Diconix 150
+Kyocera Q-8010
+NEC Colormate PS
+NEC P6200/P6300
+NEC Silentwriter2 90 and 290
+Panasonic KX-P4420 and KX-P4450i
+QMS PS-410
+Qume CrystalPrint Super Series II
+Seikosha SL-90
+Seikosha SP-2000
+Star LaserPrinter 8II/8IIDX
+Star Micronics NX-1001
+Star Micronics NX-1020 Rainbow
+Star Micronics NX-2420
+Toshiba ExpressWriter 301
+Unisys AP 1324, AP 1337, AP 1339, and AP 9230
+Unisys AP 9415 (PostScript)
+
+Detailed information about these printers appears in the
+text file PRINTER.DOC on Supplemental Printer disk 1.
+
+GENERAL INFORMATION
+
+If you use a parallel printer to print long, complex
+documents, include this line in your AUTOEXEC.BAT file:
+
+MODE lpt1:,,p
+
+
+ADDITIONAL SUPPORT FOR THE HEWLETT-PACKARD LASERJET SERIES
+
+All PRD files for the Hewlett-Packard LaserJet series now
+include support for the IIIP and IIISi models. In addition,
+some of the PRD files listed in the Hewlett-Packard section
+of "Printer Information for Microsoft Word" have been
+changed.
+
+When you install any PRD file for an HP LaserJet, Setup
+automatically creates a file with the same name as the PRD
+file, but with an .INI extension. You need this INI file
+only if you use the IIISi model. If you copy an HP PRD file
+manually and intend to use the IIISi model, make sure you
+copy the HP3SI.INI file as well. (HP3SI.INI is on the
+Utilities/Printer disk if you have 1.2M high-density disks.
+It is on the Learning 1 and Print 2 disk if you have 360K
+disks and on the Print & Learn disk if you have 720K disks.)
+Then rename the INI file to match the name of the PRD file
+you want to use. For example, if you copy HPLASMS.PRD,
+you should also copy HP3SI.INI and then rename it
+HPLASMS.INI.
+
+
+LaserJet IIISi
+
+Because this is a network printer, you should download all
+fonts each time you print.
+
+To use the PostScript option for this printer, choose File
+Printer Setup and in the Printer File option, select
+POSTSCRP.PRD. In the Printer Name option, select LaserJet
+IIISi.
+
+Model Information:
+
+Internal fonts:
+Courier        10,12
+CourierPC      10, 12
+LinePrinter    8.5
+LinePrinterPC  8.5
+CGTimes        1-127
+Univers        1-127
+UniversCd      1-127
+ZapfDingbats   1-127
+
+Font Cartridges:            Two font cartridge slots
+Downloadable fonts:         Yes
+Graphics Resolution (dpi):  75, 150, 300
+Unprintable Regions:        Top: 0.17", Left: 0.25",
+                            Bottom: 0.2", Right: 0.25"
+Bin Support:                Dual bins; optional envelope
+                            feeder
+Duplex:                     Yes
+
+Font Information:
+
+Only the following PRD files support all of this model's
+internal fonts: HP3.PRD, HP3FNT1.PRD, HP3FNT2.PRD,
+HPBAR.PRD, HPEQUATE.PRD, HPFORMS.PRD, HPGLOBAL.PRD,
+HPGSTART.PRD, HPINTL.PRD, HPLASER.PRD, HPLASMS.PRD,
+HPLASMSA.PRD, HPPRETTY.PRD, HPPRO.PRD, HPRESENT.PRD,
+HPWP.PRD, and HPWSHEET.PRD.
+
+
+LaserJet IIIP
+
+Model Information
+
+Internal fonts:
+The LaserJet IIIP includes the same internal fonts as the
+LaserJet III and LaserJet IIID, listed on page 122 of
+"Printer Information for Microsoft Word."
+
+Downloadable fonts:            Yes
+LineDrawing font:              CourierPC
+Graphics Resolution (dpi):     75, 150, 300
+Unprintable Regions:           Top: 0.17", Left: 0.25",
+                               Bottom: 0.2", Right: 0.25"
+
+Changes to Hewlett-Packard PRD Files
+
+HP3FONTS.PRD has been split into two new PRD files,
+HP3FNTS1.PRD and HP3FNTS2.PRD.
+
+HP3FONTI.PRD has been split into two new PRD files,
+HP3FNTI1.PRD and HP3FNTI2.PRD. These PRD files support
+the same fonts as HP3FNTS1.PRD and HP3FNTS2.PRD,
+respectively, but they use the PC-850 symbol set.
+
+All of these new PRD files are available on the Supplemental
+Printer Disks.
+
+HP3FNTS1.PRD supports the following fonts and font sets:
+CG Triumvirate
+CG Triumvirate Condensed
+Futura II
+ITC Avant Garde Gothic
+ITC Lubalin Graph
+Microstyle
+Compelling Publications I
+Distinctive Documents I
+
+HP3FNTS2.PRD supports the following font sets:
+Brilliant Presentations I
+Compelling Publications II
+Decorative Words I
+
+
+LISTINGS FOR OTHER NEW PRINTERS
+
+Citizen GSX 140/145
+
+PRD File:           GSX140.PRD
+
+For model and font information, see the Epson LQ 2550
+listing on page 100 of "Printer Information for Microsoft
+Word."
+
+
+Epson ActionPrinter 5000/5500
+
+For model and font information, see the listings for the
+Epson LQ-570 and Epson LQ-1070.
+
+PRD File:                     EPSONLQ5.PRD
+
+
+Epson LQ-570/870/1070/1170
+
+Use the appropriate model ending with "(SF)" when you have a
+sheet feeder installed.
+
+PRD File:                       EPSONLQ5.PRD
+
+Model Names:                    Epson LQ-570/870
+                                Epson LQ-570/870 (SF)
+                                Epson LQ-1070/1170
+                                Epson LQ-1070/1170 (SF)
+Line Drawing Font:              Courier
+IBM Graphics Characters:        Yes
+Graphics Resolution (dpi):      60, 180, 360
+Unprintable Regions:            (for sheetfeeder model)
+                                Top: 0.472", Left: 0.25",
+                                Bottom: 0.556", Right: 0.25"
+Bin Support:                    Single-bin sheet feeder
+
+Font Information:
+Outlined, shadowed, and outlined-shadowed characters are
+available on this printer by selecting Pattern 1, Pattern 2,
+or Pattern 3 in the Color option of the Format Character
+command.
+
+RomanPS and SansSerifPS are scalable fonts available in
+sizes from 8 to 32 points in increments of two points.
+
+Draft             6, 7, 8, 10, 12, 14, 15, 16, 17, 18, 19,
+                    20, 21, 22, 23, 24
+Roman             6, 7, 8, 10, 12, 14, 15, 16, 17, 18, 19,
+                    20, 21, 22, 23, 24
+SansSerif         6, 7, 8, 10, 12, 14, 15, 16, 17, 18, 19,
+                    20, 21, 22, 23, 24
+Courier           6, 7, 8, 10, 12, 14, 15, 16, 17, 18, 19,
+                    20, 21, 22, 23, 24
+Prestige          6, 7, 8, 10, 12, 14, 15, 16, 17, 18, 19,
+                    20, 21, 22, 23, 24
+OCR-B             6, 7, 8, 10, 12, 14, 15, 16, 17, 18, 19,
+                    20, 21, 22, 23, 24
+RomanPS           8-32
+SansSerifPS       8-32
+Script            6, 7, 8, 10, 12, 14, 15, 16, 17, 18, 19,
+                    20, 21, 22, 23, 24
+ScriptC           12, 16, 21, 24
+Orator            6, 7, 8, 10, 12, 14, 15, 16, 17, 18, 19,
+                    20, 21, 22, 23, 24
+Orator-S          6, 7, 8, 10, 12, 14, 15, 16, 17, 18, 19,
+                    20, 21, 22, 23, 24
+
+
+Epson LQ-860
+
+PRD File:                  EPSONLQ4.PRD
+
+For model and font information, see the
+Epson LQ-850/950/1050 listing on page 96 in
+"Printer Information for Microsoft Word." This printer
+supports color printing.
+
+Epson LQ-2500
+
+PRD File:                  LQ2500.PRD
+Model Name:                LQ-2500 Color
+                           LQ-2500
+Line Drawing Font:         Pica
+IBM Graphics Characters:   Yes
+Graphics Resolution (dpi): 60, 180, 360
+Bin Support:               Dual-bin sheetfeeder
+
+Font Information
+
+Pica           7, 8, 12, 14, 15, 16
+Courier        10, 12, 15, 16
+Elite          6, 10, 12, 15
+Prestige       10, 12, 15, 16
+NLQ            10, 12, 15, 16
+SansSerif      10, 12, 15, 16
+SansSerifPS    12, 16
+OCR-B          12, 16
+PS             12, 16
+Script         10, 12, 15, 16
+
+
+IBM Execjet 4072
+
+Use the IBM 4072 (SF) model when you have a sheet feeder
+installed.
+
+PRD File:                  IBM4072.PRD
+
+Model Names:               IBM 4072
+                           IBM 4072 (SF)
+Line Drawing Font:         Courier
+IBM Graphics Characters:   Yes
+Graphics Resolution (dpi): 60, 120, 180, 360
+Unprintable Regions:       (for SF model)
+                           Top: 0", Left: 0.5",
+                           Bottom: 0.5", Right: 0"
+Font Information:
+
+All fonts come in "Short_", "Tall_", and "normal" versions.
+Fonts beginning with "Short_" use the superscript mode;
+"Tall_" fonts use the double-high mode, and "normal" fonts
+use normal high mode.
+
+All fixed-pitch fonts are available in point sizes 5, 6, 7,
+8, 10, 12, 14, 16, 20, and 24. All proportional fonts are
+available in 12 and 24 points.
+
+Internal Fonts
+
+Courier      5, 6, 7, 8, 10, 12, 14, 16, 20, 24
+Gothic       5, 6, 7, 8, 10, 12, 14, 16, 20, 24
+Prestige     5, 6, 7, 8, 10, 12, 14, 16, 20, 24
+CourierPS    12, 24
+GothicPS     12, 24
+PrestigePS   12, 24
+
+Word Processing Cartridge Fonts
+
+Script       12, 24
+BoldfacePS   12, 24
+PressRomanPS 12, 24
+ThesisPS     12, 24
+
+OCR/Symbol Cartridge Fonts
+
+OCR-A          5, 6, 7, 8, 10, 12, 14, 16, 20, 24
+OCR-B          5, 6, 7, 8, 10, 12, 14, 16, 20, 24
+OldeWorld      12, 24
+PrestigeSymbol 12, 24
+
+Presentations Cartridge Fonts
+
+Presentor      5, 6, 7, 8, 10, 12, 14, 16, 20, 24
+Orator         5, 6, 7, 8, 10, 12, 14, 16, 20, 24
+EssayPS        5, 6, 7, 8, 10, 12, 14, 16, 20, 24
+GothicSymbol   5, 6, 7, 8, 10, 12, 14, 16, 20, 24
+
+
+Kodak Diconix 150 Plus
+
+PRD File:                   DICONIX.PRD
+Model Name:                 Kodak, Diconix, 150, Plus
+Line Drawing Font:          Draft
+IBM Graphics Characters:    Yes
+Graphics Resolution (dpi):  80, 160, 260
+
+Font Information
+
+Draft         8, 10, 12, 14, 15, 16
+DraftD        8, 10, 12, 14, 15, 16
+NLQ           8, 10, 12, 14, 15, 16
+NLQD          8, 10, 12, 14, 15, 16
+Quality       8, 10, 12, 14, 15, 16
+QualityD      8, 10, 12, 14, 15, 16
+Script        8, 10, 14, 15
+
+
+NEC P6200/P6300
+
+Use a model that ends with "(SF)" when you have a sheet
+feeder installed. To use the P620055.PRD file, you must copy
+and decompress the file manually.
+
+PRD Files:                 NECP6200.PRD (for Word 5.0)
+                           P620055.PRD (for Word 5.5)
+
+Model Names:               NEC P6200
+                           NEC P6200 (Color)
+                           NEC P6200 (SF)
+                           NEC P6200 (Color, SF)
+                           NEC P6300
+                           NEC P6300 (Color)
+                           NEC P6300 (SF)
+                           NEC P6300 (Color, SF)
+Line Drawing Font:         Courier
+IBM Graphics Characters:   Yes
+Graphics Resolution (dpi): 60, 180, 360
+Unprintable Regions:       Top: 0.333" Left: 0.5"
+                           Bottom: 0" Right: 0"
+Bin Support:               Dual-bin sheet feeder
+
+Font Information:
+
+Black, red, green, blue, violet, magenta, and yellow font
+colors are supported if the color kit is installed in the
+printer and the proper model is selected in the Printer Name
+option of the File Printer Setup command.
+
+All cartridge fonts except BoldItalicPS are fixed-pitch
+fonts supported by the CartrdigeFont font. BoldItalicPS on
+the 708 cartridge is listed separately. Note that you must
+use the proper size of CartridgeFont for the cartridge
+you're using. The cartridge lists fonts by pitch. To convert
+to points see "Pitch and Points" on page 22 in "Printer
+Information for Microsoft Word."
+
+Draft            6, 7, 8, 10, 12, 13, 14, 15, 16, 24
+Courier          6, 7, 8, 10, 12, 13, 14, 15, 16, 24
+PrestigeElite    6, 8, 10, 12, 14, 15
+HelveticaPS      10, 15, 24
+CartridgeFont    8, 10, 12
+BoldPS           12, 16, 24
+BoldItalicPS     12
+TimesPS          10, 15, 24
+ITCSouvenir      7, 12, 14, 16, 24
+
+
+PostScript Printers
+
+Fujitsu 7100 PS
+Kyocera Q-8010
+NEC Colormate PS
+NEC Silentwriter2 90 and 290
+QMS PS-410
+
+Word uses the POSTSCRP.PRD file to support these printers
+(except the NEC Colormate PS). For more information, see the
+"PostScript Printers" listing on page 208 in "Printer
+Information for Microsoft Word."
+
+All PRD files that support PostScript printers now include
+support for the HP LaserJet IIISi and LaserJet PostScript
+Option models.
+
+Support for the NEC Colormate PS has been added to
+PSCOLOR.PRD
+
+The QMS PS-410 model includes support for two additional
+fonts: AdobeGaramond and HelvCondensed in point sizes 1-127.
+
+A new PRD file, PSNET55.PRD, has been added to this release
+for use with Word 5.5 only. For information about using this
+PRD file, see the PSNET.PRD listing under "PostScript
+Printers" on page 208 in "Printer Information for Microsoft
+Word." To use PSNET55.PRD, you must copy and decompress the
+file manually.
+
+
+Star Micronics NX-1001
+For model and font information, see the "Star NX-1000/D/II,
+NX-1500, and NX-1000 Rainbow" listing on page 229 in
+"Printer Information for Microsoft Word."
+
+
+Texas Instruments 875/877
+
+PRD File:                   TI875.PRD
+Model Names:                TI-875
+                            TI-877
+Line Drawing Font:          NLQ
+IBM Graphics Characters:    No
+Graphics Resolution (dpi):  60, 180
+Bin Support:                Dual-bin sheetfeeder
+
+Font Information:
+Pica            8, 12, 14, 16
+PicaD           8, 12, 14, 16
+Elite           6, 10, 12, 15
+EliteD          6, 10, 12, 15
+NLQ             10, 12, 15, 16
+NLQD            10, 12, 15, 16
+PS              12, 16
+PSNLQ           12, 16
+
+
+Texas Instruments 885
+
+PRD File:                   TI885.PRD
+Model Name:                 TI-885
+Line Drawing Font:          DraftGothic
+IBM Graphics Characters:    No
+Graphics Resolution (dpi):  60, 120
+
+Font Information:
+Draft Gothic     12
+EnhancedGothic   12
+OCR-A            12
+
+CORRECTIONS TO "PRINTER INFORMATION FOR MICROSOFT WORD."
+
+C.Itoh CIE LIPS 10 Plus (LIPS10-1.PRD)
+
+International fonts are supported only on the
+CIE LIPS 10 II.
+
+Canon BJ-10e
+
+The Canon BJ-10e BubbleJet printer and Canon BJ-10e Bubble
+Jet with sheet feeder are supported by CANONBJE.PRD. The
+information for the PRD file is listed under the Canon BJ-
+130e Bubble Jet listing on page 71 of "Printer Information
+for Microsoft Word."
+
+Hewlett-Packard LaserJet IID
+
+The following internal fonts for the HP LaserJet IID are
+supported by all HP LaserJet PRD files:
+
+Portrait and landscape Courier 10, 12
+Portrait and landscape LinePrinter 8.5
+
+
+NEC P5200/5300
+
+There are now two PRD files that support this printer. Use
+NECP5200.PRD for Word 5.0 and P520055.PRD for Word 5.5. To
+use P520055.PRD, you must copy and decompress the file
+manually.
+
+
+Xerox 2700 and 3700CP
+Support for these printers is available on the disks that
+came with you Word package, not on the Supplemental Printer
+Disks.
